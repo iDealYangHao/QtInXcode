@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC5A9FB5281AB1DB008818CB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC5A9FB4281AB1DB008818CB /* main.cpp */; };
+		DC5AA001281AC706008818CB /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5A9FFE281AC706008818CB /* QtGui.framework */; };
+		DC5AA002281AC706008818CB /* QtWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5A9FFF281AC706008818CB /* QtWidgets.framework */; };
+		DC5AA003281AC706008818CB /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5AA000281AC706008818CB /* QtCore.framework */; };
+		DC5AA00E281ACFA7008818CB /* mainwindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA00C281ACFA7008818CB /* mainwindow.cpp */; };
+		DC5AA00F281AD095008818CB /* mainwindow.hpp in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA00D281ACFA7008818CB /* mainwindow.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		DC5A9FBB281AC192008818CB /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.hpp";
+			fileType = pattern.proxy;
+			inputFiles = (
+				"$(SRCROOT)",
+				"",
+			);
+			isEditable = 1;
+			outputFiles = (
+				"${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}_moc.cpp",
+			);
+			runOncePerArchitecture = 0;
+			script = "/Users/yanghao/Qt/6.0.2/clang_64/bin/moc ${INPUT_FILE_PATH} -o ${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}_moc.cpp \n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC5A9FAF281AB1DB008818CB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DC5A9FB1281AB1DB008818CB /* network */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = network; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5A9FB4281AB1DB008818CB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DC5A9FFE281AC706008818CB /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../../../usr/local/Cellar/qt/6.2.3_1/lib/QtGui.framework; sourceTree = "<group>"; };
+		DC5A9FFF281AC706008818CB /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = ../../../../usr/local/Cellar/qt/6.2.3_1/lib/QtWidgets.framework; sourceTree = "<group>"; };
+		DC5AA000281AC706008818CB /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../../../usr/local/Cellar/qt/6.2.3_1/lib/QtCore.framework; sourceTree = "<group>"; };
+		DC5AA004281AC8F8008818CB /* widget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = widget.cpp; sourceTree = "<group>"; };
+		DC5AA005281AC8F8008818CB /* widget.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = widget.hpp; sourceTree = "<group>"; };
+		DC5AA00C281ACFA7008818CB /* mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mainwindow.cpp; sourceTree = "<group>"; };
+		DC5AA00D281ACFA7008818CB /* mainwindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mainwindow.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC5A9FAE281AB1DB008818CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5AA001281AC706008818CB /* QtGui.framework in Frameworks */,
+				DC5AA002281AC706008818CB /* QtWidgets.framework in Frameworks */,
+				DC5AA003281AC706008818CB /* QtCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC5A9FA8281AB1DB008818CB = {
+			isa = PBXGroup;
+			children = (
+				DC5A9FB3281AB1DB008818CB /* network */,
+				DC5A9FB2281AB1DB008818CB /* Products */,
+				DC5A9FBD281AC508008818CB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC5A9FB2281AB1DB008818CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC5A9FB1281AB1DB008818CB /* network */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC5A9FB3281AB1DB008818CB /* network */ = {
+			isa = PBXGroup;
+			children = (
+				DC5AA004281AC8F8008818CB /* widget.cpp */,
+				DC5AA005281AC8F8008818CB /* widget.hpp */,
+				DC5A9FB4281AB1DB008818CB /* main.cpp */,
+				DC5AA00C281ACFA7008818CB /* mainwindow.cpp */,
+				DC5AA00D281ACFA7008818CB /* mainwindow.hpp */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		DC5A9FBD281AC508008818CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC5AA000281AC706008818CB /* QtCore.framework */,
+				DC5A9FFE281AC706008818CB /* QtGui.framework */,
+				DC5A9FFF281AC706008818CB /* QtWidgets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC5A9FB0281AB1DB008818CB /* network */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5A9FB8281AB1DB008818CB /* Build configuration list for PBXNativeTarget "network" */;
+			buildPhases = (
+				DC5A9FAD281AB1DB008818CB /* Sources */,
+				DC5A9FAE281AB1DB008818CB /* Frameworks */,
+				DC5A9FAF281AB1DB008818CB /* CopyFiles */,
+			);
+			buildRules = (
+				DC5A9FBB281AC192008818CB /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = network;
+			productName = network;
+			productReference = DC5A9FB1281AB1DB008818CB /* network */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC5A9FA9281AB1DB008818CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					DC5A9FB0281AB1DB008818CB = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = DC5A9FAC281AB1DB008818CB /* Build configuration list for PBXProject "network" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC5A9FA8281AB1DB008818CB;
+			productRefGroup = DC5A9FB2281AB1DB008818CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC5A9FB0281AB1DB008818CB /* network */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC5A9FAD281AB1DB008818CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5AA00F281AD095008818CB /* mainwindow.hpp in Sources */,
+				DC5A9FB5281AB1DB008818CB /* main.cpp in Sources */,
+				DC5AA00E281ACFA7008818CB /* mainwindow.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DC5A9FB6281AB1DB008818CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DC5A9FB7281AB1DB008818CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DC5A9FB9281AB1DB008818CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/qt/6.2.3_1/lib,
+				);
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/qt/6.2.3_1/include/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		DC5A9FBA281AB1DB008818CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/qt/6.2.3_1/lib,
+				);
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/qt/6.2.3_1/include/**";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC5A9FAC281AB1DB008818CB /* Build configuration list for PBXProject "network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5A9FB6281AB1DB008818CB /* Debug */,
+				DC5A9FB7281AB1DB008818CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5A9FB8281AB1DB008818CB /* Build configuration list for PBXNativeTarget "network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5A9FB9281AB1DB008818CB /* Debug */,
+				DC5A9FBA281AB1DB008818CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC5A9FA9281AB1DB008818CB /* Project object */;
+}
