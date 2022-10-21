@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC01B48B29027D84004628F8 /* QtWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC01B48829027D84004628F8 /* QtWidgets.framework */; };
+		DC01B48C29027D84004628F8 /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC01B48929027D84004628F8 /* QtCore.framework */; };
+		DC01B48D29027D84004628F8 /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC01B48A29027D84004628F8 /* QtGui.framework */; };
 		DC5A9FB5281AB1DB008818CB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC5A9FB4281AB1DB008818CB /* main.cpp */; };
-		DC5AA001281AC706008818CB /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5A9FFE281AC706008818CB /* QtGui.framework */; };
-		DC5AA002281AC706008818CB /* QtWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5A9FFF281AC706008818CB /* QtWidgets.framework */; };
-		DC5AA003281AC706008818CB /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5AA000281AC706008818CB /* QtCore.framework */; };
 		DC5AA00E281ACFA7008818CB /* mainwindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA00C281ACFA7008818CB /* mainwindow.cpp */; };
 		DC5AA00F281AD095008818CB /* mainwindow.hpp in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA00D281ACFA7008818CB /* mainwindow.hpp */; };
 /* End PBXBuildFile section */
@@ -30,7 +30,7 @@
 				"${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}_moc.cpp",
 			);
 			runOncePerArchitecture = 0;
-			script = "/Users/yanghao/Qt/6.0.2/clang_64/bin/moc ${INPUT_FILE_PATH} -o ${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}_moc.cpp \n";
+			script = "/usr/local/Cellar/qt@5/5.15.2_2/bin/moc ${INPUT_FILE_PATH} -o ${DERIVED_FILE_DIR}/${INPUT_FILE_BASE}_moc.cpp \n";
 		};
 /* End PBXBuildRule section */
 
@@ -47,11 +47,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DC01B48829027D84004628F8 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = "../../../../usr/local/Cellar/qt@5/5.15.2_2/lib/QtWidgets.framework"; sourceTree = "<group>"; };
+		DC01B48929027D84004628F8 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = "../../../../usr/local/Cellar/qt@5/5.15.2_2/lib/QtCore.framework"; sourceTree = "<group>"; };
+		DC01B48A29027D84004628F8 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = "../../../../usr/local/Cellar/qt@5/5.15.2_2/lib/QtGui.framework"; sourceTree = "<group>"; };
 		DC5A9FB1281AB1DB008818CB /* network */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = network; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5A9FB4281AB1DB008818CB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		DC5A9FFE281AC706008818CB /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = ../../../../usr/local/Cellar/qt/6.2.3_1/lib/QtGui.framework; sourceTree = "<group>"; };
-		DC5A9FFF281AC706008818CB /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = ../../../../usr/local/Cellar/qt/6.2.3_1/lib/QtWidgets.framework; sourceTree = "<group>"; };
-		DC5AA000281AC706008818CB /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = ../../../../usr/local/Cellar/qt/6.2.3_1/lib/QtCore.framework; sourceTree = "<group>"; };
 		DC5AA004281AC8F8008818CB /* widget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = widget.cpp; sourceTree = "<group>"; };
 		DC5AA005281AC8F8008818CB /* widget.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = widget.hpp; sourceTree = "<group>"; };
 		DC5AA00C281ACFA7008818CB /* mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mainwindow.cpp; sourceTree = "<group>"; };
@@ -63,9 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC5AA001281AC706008818CB /* QtGui.framework in Frameworks */,
-				DC5AA002281AC706008818CB /* QtWidgets.framework in Frameworks */,
-				DC5AA003281AC706008818CB /* QtCore.framework in Frameworks */,
+				DC01B48B29027D84004628F8 /* QtWidgets.framework in Frameworks */,
+				DC01B48C29027D84004628F8 /* QtCore.framework in Frameworks */,
+				DC01B48D29027D84004628F8 /* QtGui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,9 +104,9 @@
 		DC5A9FBD281AC508008818CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DC5AA000281AC706008818CB /* QtCore.framework */,
-				DC5A9FFE281AC706008818CB /* QtGui.framework */,
-				DC5A9FFF281AC706008818CB /* QtWidgets.framework */,
+				DC01B48929027D84004628F8 /* QtCore.framework */,
+				DC01B48A29027D84004628F8 /* QtGui.framework */,
+				DC01B48829027D84004628F8 /* QtWidgets.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -294,9 +294,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/qt/6.2.3_1/lib,
+					"/usr/local/Cellar/qt@5/5.15.2_2/lib",
 				);
-				HEADER_SEARCH_PATHS = "/usr/local/Cellar/qt/6.2.3_1/include/**";
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/qt@5/5.15.2_2/include/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -309,9 +309,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/local/Cellar/qt/6.2.3_1/lib,
+					"/usr/local/Cellar/qt@5/5.15.2_2/lib",
 				);
-				HEADER_SEARCH_PATHS = "/usr/local/Cellar/qt/6.2.3_1/include/**";
+				HEADER_SEARCH_PATHS = "/usr/local/Cellar/qt@5/5.15.2_2/include/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};

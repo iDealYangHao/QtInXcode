@@ -8,9 +8,9 @@
 #ifndef widget_hpp
 #define widget_hpp
 
-#include <QWidget>
-#include <QtCore>
-#include <QLabel>
+#include <QtWidgets>
+
+
 class Widget : public QWidget
 {
     Q_OBJECT

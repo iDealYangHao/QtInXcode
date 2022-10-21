@@ -8,7 +8,7 @@
 #ifndef mainwindow_hpp
 #define mainwindow_hpp
 
-#include <QWidget>
+#include <QtWidgets>
 
 class window : public QWidget
 {
