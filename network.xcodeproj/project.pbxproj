@@ -10,6 +10,14 @@
 		DC01B48B29027D84004628F8 /* QtWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC01B48829027D84004628F8 /* QtWidgets.framework */; };
 		DC01B48C29027D84004628F8 /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC01B48929027D84004628F8 /* QtCore.framework */; };
 		DC01B48D29027D84004628F8 /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC01B48A29027D84004628F8 /* QtGui.framework */; };
+		DC01B491290285EB004628F8 /* libopencv_highgui.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC01B48E290285EB004628F8 /* libopencv_highgui.4.5.5.dylib */; };
+		DC01B492290285EB004628F8 /* libopencv_highgui.4.5.5.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = DC01B48E290285EB004628F8 /* libopencv_highgui.4.5.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DC01B493290285EB004628F8 /* libopencv_core.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC01B48F290285EB004628F8 /* libopencv_core.4.5.5.dylib */; };
+		DC01B494290285EB004628F8 /* libopencv_core.4.5.5.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = DC01B48F290285EB004628F8 /* libopencv_core.4.5.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		DC01B498290289F4004628F8 /* libopencv_core.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC01B48F290285EB004628F8 /* libopencv_core.4.5.5.dylib */; };
+		DC01B49929028A2F004628F8 /* libopencv_highgui.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC01B48E290285EB004628F8 /* libopencv_highgui.4.5.5.dylib */; };
+		DC01B49B29028A2F004628F8 /* libopencv_imgcodecs.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC01B49A29028A2F004628F8 /* libopencv_imgcodecs.4.5.5.dylib */; };
+		DC01B49C29028A2F004628F8 /* libopencv_imgcodecs.4.5.5.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = DC01B49A29028A2F004628F8 /* libopencv_imgcodecs.4.5.5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		DC5A9FB5281AB1DB008818CB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC5A9FB4281AB1DB008818CB /* main.cpp */; };
 		DC5AA00E281ACFA7008818CB /* mainwindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA00C281ACFA7008818CB /* mainwindow.cpp */; };
 		DC5AA00F281AD095008818CB /* mainwindow.hpp in Sources */ = {isa = PBXBuildFile; fileRef = DC5AA00D281ACFA7008818CB /* mainwindow.hpp */; };
@@ -35,6 +43,19 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		DC01B497290285EB004628F8 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DC01B494290285EB004628F8 /* libopencv_core.4.5.5.dylib in Embed Libraries */,
+				DC01B49C29028A2F004628F8 /* libopencv_imgcodecs.4.5.5.dylib in Embed Libraries */,
+				DC01B492290285EB004628F8 /* libopencv_highgui.4.5.5.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC5A9FAF281AB1DB008818CB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,6 +71,10 @@
 		DC01B48829027D84004628F8 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = "../../../../usr/local/Cellar/qt@5/5.15.2_2/lib/QtWidgets.framework"; sourceTree = "<group>"; };
 		DC01B48929027D84004628F8 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = "../../../../usr/local/Cellar/qt@5/5.15.2_2/lib/QtCore.framework"; sourceTree = "<group>"; };
 		DC01B48A29027D84004628F8 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = "../../../../usr/local/Cellar/qt@5/5.15.2_2/lib/QtGui.framework"; sourceTree = "<group>"; };
+		DC01B48E290285EB004628F8 /* libopencv_highgui.4.5.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.4.5.5.dylib; path = ../../../../usr/local/Cellar/opencv/4.5.5/lib/libopencv_highgui.4.5.5.dylib; sourceTree = "<group>"; };
+		DC01B48F290285EB004628F8 /* libopencv_core.4.5.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.4.5.5.dylib; path = ../../../../usr/local/Cellar/opencv/4.5.5/lib/libopencv_core.4.5.5.dylib; sourceTree = "<group>"; };
+		DC01B490290285EB004628F8 /* libopencv_img_hash.4.5.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_img_hash.4.5.5.dylib; path = ../../../../usr/local/Cellar/opencv/4.5.5/lib/libopencv_img_hash.4.5.5.dylib; sourceTree = "<group>"; };
+		DC01B49A29028A2F004628F8 /* libopencv_imgcodecs.4.5.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.4.5.5.dylib; path = ../../../../usr/local/Cellar/opencv/4.5.5/lib/libopencv_imgcodecs.4.5.5.dylib; sourceTree = "<group>"; };
 		DC5A9FB1281AB1DB008818CB /* network */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = network; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5A9FB4281AB1DB008818CB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DC5AA004281AC8F8008818CB /* widget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = widget.cpp; sourceTree = "<group>"; };
@@ -63,8 +88,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC01B49B29028A2F004628F8 /* libopencv_imgcodecs.4.5.5.dylib in Frameworks */,
+				DC01B49929028A2F004628F8 /* libopencv_highgui.4.5.5.dylib in Frameworks */,
+				DC01B493290285EB004628F8 /* libopencv_core.4.5.5.dylib in Frameworks */,
 				DC01B48B29027D84004628F8 /* QtWidgets.framework in Frameworks */,
+				DC01B491290285EB004628F8 /* libopencv_highgui.4.5.5.dylib in Frameworks */,
 				DC01B48C29027D84004628F8 /* QtCore.framework in Frameworks */,
+				DC01B498290289F4004628F8 /* libopencv_core.4.5.5.dylib in Frameworks */,
 				DC01B48D29027D84004628F8 /* QtGui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +134,10 @@
 		DC5A9FBD281AC508008818CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC01B49A29028A2F004628F8 /* libopencv_imgcodecs.4.5.5.dylib */,
+				DC01B48F290285EB004628F8 /* libopencv_core.4.5.5.dylib */,
+				DC01B48E290285EB004628F8 /* libopencv_highgui.4.5.5.dylib */,
+				DC01B490290285EB004628F8 /* libopencv_img_hash.4.5.5.dylib */,
 				DC01B48929027D84004628F8 /* QtCore.framework */,
 				DC01B48A29027D84004628F8 /* QtGui.framework */,
 				DC01B48829027D84004628F8 /* QtWidgets.framework */,
@@ -121,6 +155,7 @@
 				DC5A9FAD281AB1DB008818CB /* Sources */,
 				DC5A9FAE281AB1DB008818CB /* Frameworks */,
 				DC5A9FAF281AB1DB008818CB /* CopyFiles */,
+				DC01B497290285EB004628F8 /* Embed Libraries */,
 			);
 			buildRules = (
 				DC5A9FBB281AC192008818CB /* PBXBuildRule */,
@@ -295,8 +330,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/usr/local/Cellar/qt@5/5.15.2_2/lib",
+					/usr/local/Cellar/opencv/4.5.5/lib,
 				);
-				HEADER_SEARCH_PATHS = "/usr/local/Cellar/qt@5/5.15.2_2/include/**";
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/qt@5/5.15.2_2/include/**",
+					"/usr/local/Cellar/opencv/4.5.5/include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/4.5.5/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -310,8 +353,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/usr/local/Cellar/qt@5/5.15.2_2/lib",
+					/usr/local/Cellar/opencv/4.5.5/lib,
 				);
-				HEADER_SEARCH_PATHS = "/usr/local/Cellar/qt@5/5.15.2_2/include/**";
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/Cellar/qt@5/5.15.2_2/include/**",
+					"/usr/local/Cellar/opencv/4.5.5/include/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/4.5.5/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
